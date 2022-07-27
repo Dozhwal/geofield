@@ -44,7 +44,7 @@ export default {
   components: { UploadProgress, Notifications, DialogWindows },
   metaInfo () {
     return {
-      title: 'Mergin',
+      title: 'GEOFIELD',
       meta: [
         { name: 'description', content: 'Store and track changes to your geo-data. Mergin is a repository of geo-data for collaborative work.' },
         { property: 'og:title', content: 'Store and track changes to your geo-data. Mergin is a repository of geo-data for collaborative work.' },

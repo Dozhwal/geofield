@@ -17,7 +17,7 @@
     <v-container class="py-1">
       <v-card>
         <v-responsive class="mt-2">
-          <img src="../assets/logo_color.svg" @click="home">
+          <img src="../assets/geofield_2.svg" @click="home">
         </v-responsive>
         <v-card-text>
           <p
@@ -48,7 +48,7 @@
               <v-text-field
                 placeholder="Username or email"
                 name="login"
-                color="orange"
+                color="#38a8c0"
                 v-model="login"
                 :error-messages="errors.login"
                 @keyup.enter="loginUser"
@@ -56,7 +56,7 @@
               <v-text-field
                 placeholder="Password"
                 name="password"
-                color="orange"
+                color="#38a8c0"
                 v-model="password"
                 :append-icon="passwordVisible ? 'visibility_off' : 'visibility'"
                 @click:append="passwordVisible = !passwordVisible"
@@ -67,7 +67,7 @@
               <v-btn
                 :dark="Boolean(login && password)"
                 :disabled="!login || !password"
-                color="orange"
+                color="#2b3181"
                 class="mx-0 mt-3"
                 id="login-btn"
                 @click="loginUser"
@@ -80,7 +80,7 @@
             <v-btn
             v-if="!forgotPassword"
             text small
-            color="primary"
+            color="#03a885"
             class="reset"
             :to="{name: 'login', params:{reset: 'reset'}}"
             >Forgot password?
@@ -88,7 +88,7 @@
             <v-btn
             v-if="!forgotPassword && app.registration"
             text small
-            color="primary"
+            color="#03a885"
             class="reset"
             @click="toRegister"
             >Register
@@ -204,12 +204,14 @@ export default {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    background-color: #e6e6e6;
   }
   .container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex: 0 0 auto;
+    background-color: #e6e6e6;
   }
 
   ::v-deep .v-card {
@@ -247,13 +249,14 @@ export default {
         position: absolute;
         right: 0.25em;
         .v-icon {
-          color: #ccc!important;
+          color: #38a8c0!important;
         }
       }
     }
     .cookies {
       margin: 0.5em;
       text-align: center;
+      color: #2b3181;
     }
     .version {
       margin: 1em 0 0.5em 0;

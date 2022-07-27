@@ -9,9 +9,9 @@
             <v-card v-if="!app.user.verified_email"
                     outlined
                     class="bubble mt-3"
-                    style="background-color: orange; color: rgba(0,0,0,.87);">
+                    style="background-color: #2b3181; color: #e6e6e6;">
               Your email hasn't been confirmed yet
-              <v-btn color="#ecf3ff"
+              <v-btn color="#e6e6e6"
                      @click="sendConfirmationEmail(app.user.email)"
                      style="float:right;"
               >Send confirmation email

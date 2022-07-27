@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   db:
-    image: postgres:10
+    image: postgis/postgis:13-3.2
     container_name: mergin-db
     ports:
       - 5433:5432
@@ -34,13 +34,13 @@ services:
       - DEFAULT_STORAGE_SIZE=104857600 # 100 MB
       - DB_USER=postgres
       - DB_PASSWORD=postgres
-      - DB_HOST=172.17.0.1
+      - DB_HOST=10.1.1.63
       - DB_PORT=5433
       - DB_APPLICATION_NAME=mergin
       - MAIL_SUPPRESS_SEND=1  # set to 0 in production
-      - MAIL_SERVER=fixme
+      - MAIL_SERVER=dozhwalbzh@gmail.com
       - MAIL_DEFAULT_SENDER=fixme
-      - MAIL_USERNAME=fixme
+      - MAIL_USERNAME=dozhwalbzh@gmail.com
       - MERGIN_BASE_URL=your-server-url # for email templates
       - MERGIN_LOGO_URL=""
       - CONTACT_EMAIL=fixme

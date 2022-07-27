@@ -70,7 +70,7 @@
         <v-card class="layout column  fill-height" flat>
           <v-card-title>
             <v-tabs left-active v-model="tab" show-arrows>
-              <v-tabs-slider color="primary"></v-tabs-slider>
+              <v-tabs-slider color="#38a8c0"></v-tabs-slider>
               <v-tab key="files" :to="{ name: `${asAdmin ? 'admin-' : ''}project-tree`, params: { namespace: namespace, projectName: project.name }}">Files</v-tab>
               <v-tab key="history" :to="{ name: `${asAdmin ? 'admin-' : ''}project-versions`, params: { namespace: namespace, projectName: project.name }}">History</v-tab>
               <v-tab key="settings" :to="{ name: `${asAdmin ? 'admin-' : ''}project-settings`, params: { namespace: namespace, projectName: project.name }}" v-if="this.app.user && this.$store.getters.isProjectOwner">Settings</v-tab>
@@ -319,9 +319,10 @@ export default {
       padding: 0 0.5em;
       margin: 0.25em;
       min-width: 2em;
+      color: #2b3181;
 
       .v-icon {
-    color: black;
+    color: #2b3181;
   }
     }
   }
@@ -339,7 +340,8 @@ export default {
   padding-left: 5px;
   .drag-drop-text{
     border: 1px dashed rgba(0, 0, 0, 0.6);
-    opacity: 0.6;
+    color: #2b3181;
+    opacity: 0.9;
     margin: 0.25em 0.25em 0.25em 0.25em;
     span {
       width: 100%;
@@ -348,6 +350,7 @@ export default {
     }
     i {
       transform: rotate(180deg);
+      color: #2b3181;
     }
   }
 }

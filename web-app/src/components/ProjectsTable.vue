@@ -120,7 +120,7 @@
             <template v-slot:activator="{ on }">
             <span v-on="on" style=" margin-right: 20px;">
               <router-link :to="{ name: 'project-versions', params: { namespace: item.namespace, projectName: item.name }}">
-                <span style="font-size: smaller"><v-icon class="icon" size="20">history</v-icon>{{ item.version.substr(1) }}</span>
+                <span style="font-size: smaller;"><v-icon class="icon" size="20">history</v-icon>{{ item.version.substr(1) }}</span>
               </router-link>
             </span>
             </template>
@@ -140,13 +140,13 @@
           </v-tooltip>
           <v-tooltip bottom>
             <template v-slot:activator="{ on }">
-            <span v-if="!item.tags.includes('valid_qgis')" v-on="on" style=" margin-right: 20px;"><v-icon color="#fb8c0087" size="20">warning</v-icon></span>
+            <span v-if="!item.tags.includes('valid_qgis')" v-on="on" style=" margin-right: 20px;"><v-icon color="red" size="20">warning</v-icon></span>
             </template>
             <span>Missing QGIS project file</span>
           </v-tooltip>
           <v-tooltip bottom>
             <template v-slot:activator="{ on }">
-            <span v-if="item.has_conflict" v-on="on" style=" margin-right: 20px;"><v-icon color="#fb8c0087" size="20">error</v-icon></span>
+            <span v-if="item.has_conflict" v-on="on" style=" margin-right: 20px;"><v-icon color="red" size="20">error</v-icon></span>
             </template>
             <span>There is conflict file in project</span>
           </v-tooltip>

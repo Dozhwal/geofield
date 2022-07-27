@@ -6,8 +6,8 @@
     <v-layout class="content">
       <router-link
         class="logo"
-        :to="{name: 'about'}">
-        <img src="@/assets/logo.svg">
+        :to="{name: 'dashboard'}">
+        <img src="@/assets/geofield_2.svg">
         <div class="banner" v-if="app.in_beta">BETA</div>
       </router-link>
 
@@ -125,6 +125,10 @@ export default {
   z-index: 7;
   .content {
     height: 50px;
+    background-color: rgba(230, 230, 230, 1);
+    border-width:1.7px;
+    border-style:inset;
+    border-color: rgba(43, 49, 129, 1);
     align-items: flex-end;
   }
   .v-btn:hover:before {
@@ -136,7 +140,6 @@ export default {
   .v-btn {
     letter-spacing: normal;
   }
-
   a {
     color: #fff;
     min-width: 2em;
@@ -177,6 +180,7 @@ export default {
 }
 .v-btn {
   text-transform: none;
+  color: rgba(43, 49, 129, 1);
 }
 .menu-sub-title {
   font-weight: 700 !important;

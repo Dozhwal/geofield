@@ -127,7 +127,7 @@ export default {
         { text: 'Removed', value: 'changes.removed', icon: 'delete', color: 'red' },
         { text: 'Modified', value: 'changes.updated', icon: 'edit', color: 'orange' },
         { text: 'Size', value: 'project_size' },
-        { text: '', value: 'archived' }
+        { text: 'Download', value: 'archived' }
       ]
     }
   },
@@ -159,5 +159,8 @@ export default {
   }
   .changes {
     flex: 0.3 1 auto;
+  }
+  .icon.v-on {
+    color: red;
   }
 </style>

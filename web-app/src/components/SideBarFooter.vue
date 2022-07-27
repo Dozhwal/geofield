@@ -5,7 +5,7 @@
   <div>
     <v-list>
       <div style="color: #2d4470;">
-        <span style="color: #8c8c8c"><v-icon style="color: #8c8c8c; margin: 0px 5px 5px 10px;">storage</v-icon>Storage</span>
+        <span style="color: #03a885"><v-icon style="color: #03a885; margin: 0px 5px 5px 10px;">storage</v-icon>Storage</span>
         <v-spacer/>
         <template
             v-if="this.diskUsage !== undefined && this.storage !== undefined"

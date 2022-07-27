@@ -41,7 +41,7 @@
         transition="scale-transition"
       >
         <template v-slot:activator="{ on }">
-        <v-btn id="login_btn" v-on="on" text dark :ripple="false" class="icon-btn" style="padding-top: 20px; text-transform: none;">
+        <v-btn id="login_btn" v-on="on" text dark :ripple="false" class="icon-btn" style="padding-top: 20px; text-transform: none; color: #38a8c0;">
           <v-icon class="mr-2 primary--text">account_circle</v-icon> <h2 class="primary--text" style="text-align: center">{{profile.username}}</h2><v-icon class="primary--text" >arrow_drop_down</v-icon>
         </v-btn>
                   </template>
@@ -69,12 +69,12 @@
       </v-list>
 
       <v-divider style="width: 90%; margin: 5px 0px 5px 0px"/>
-        <span style="color: #8c8c8c; font-size: larger">
-          <v-icon color="#8c8c8c">folder</v-icon>
+        <span style="color: #03a885; font-size: larger">
+          <v-icon color="#03a885">folder</v-icon>
           Projects
         </span>
         <v-btn x-small
-               color="#ff9800"
+               color="#38a8c0"
                rounded
                style="float: right;"
                @click="newProjectDialog">+ create</v-btn>
@@ -91,12 +91,12 @@
         </template>
       </v-list>
         <v-divider style="width: 90%; margin: 5px 0px 5px 0px"/>
-        <span style="color: #8c8c8c; font-size: larger">
-          <v-icon color="#8c8c8c">group</v-icon>
+        <span style="color: #03a885; font-size: larger">
+          <v-icon color="#03a885">group</v-icon>
           Organisations
         </span>
         <v-btn x-small
-               color="#ff9800"
+               color="#38a8c0"
                rounded
                style="float: right;"
                id="create_org_btn"
@@ -115,8 +115,8 @@
       </v-list>
         <span v-if="organisationItems.length === 0" style="font-size: 1rem; font-weight: 400; line-height: 1rem; color: #2d4470; padding-left: 18px;">No organisations yet</span>
         <v-divider style="width: 90%; margin: 5px 0px 5px 0px"/>
-        <span style="color: #8c8c8c; font-size: larger">
-          <v-icon color="#8c8c8c">settings</v-icon>
+        <span style="color: #03a885; font-size: larger">
+          <v-icon color="#03a885">settings</v-icon>
           Settings
         </span>
         <v-list  nav>
@@ -285,13 +285,13 @@ export default {
     background-color: #b0b1b5 !important
 
   .theme--dark.v-navigation-drawer
-    background-color: #eaebef !important
+    background-color: #2D4470 !important
 
   .theme--dark.v-navigation-drawer .v-divider
     border-color: hsl(240, 2%, 55%)
 
   .theme--dark.v-card
-    background-color: #eaebef !important
+    background-color: #e6e6e6!important
 
   .v-application .white--text
     color: #2D4470 !important
@@ -301,7 +301,7 @@ export default {
      color: #2D4470 !important
 
   .v-list-item--link:hover
-    background: rgba(0, 0, 0, 0.04) !important
+    background: rgba(56, 168, 224, 0.25) !important
 
   .theme--dark.v-card.v-list-item.v-list-item--link
       min-height: 20px !important
