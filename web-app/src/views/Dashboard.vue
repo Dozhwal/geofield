@@ -36,7 +36,7 @@
               <h3>Welcome {{app.user.username}}, are you ready to start?</h3>
               <p>First create new project, add people to your organisation or explore public project for more
                 inspiration</p>
-              <v-btn color="#ff9800"
+              <v-btn color="#38a8c0"
                      @click="newProjectDialog(app.user.email)"
               ><span style="color: white;">New project</span>
               </v-btn>
