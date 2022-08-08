@@ -30,14 +30,14 @@
               <v-text-field
                 placeholder="Email"
                 name="email"
-                color="orange"
+                color="#38a8c0"
                 v-model="email"
                 :error-messages="errors.email"
                 @keyup.enter="reset"
               />
               <v-btn
                 :dark="email !== ''"
-                color="orange"
+                color="#38a8c0"
                 :disabled="!email"
                 @click="reset"
               >

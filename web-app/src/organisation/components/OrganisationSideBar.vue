@@ -68,12 +68,12 @@
           </v-list>
 
           <v-divider style="width: 90%; margin: 5px 0px 5px 0px"/>
-          <span style="color: #8c8c8c; font-size: larger">
-          <v-icon color="#8c8c8c">folder</v-icon>
+          <span style="color: #03a885; font-size: larger">
+          <v-icon color="#03a885">folder</v-icon>
           Projects
         </span>
           <v-btn x-small
-               color="#ff9800"
+               color="#38a8c0"
                rounded
                style="float: right;"
                @click="newProjectDialog">+ create</v-btn>
@@ -90,8 +90,8 @@
             </template>
           </v-list>
           <v-divider style="width: 90%; margin: 5px 0px 5px 0px"/>
-          <span style="color: #8c8c8c; font-size: larger">
-            <v-icon color="#8c8c8c">settings</v-icon>
+          <span style="color: #03a885; font-size: larger">
+            <v-icon color="#03a885">settings</v-icon>
             Settings
           </span>
           <v-list nav >

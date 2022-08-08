@@ -12,14 +12,14 @@
       <v-text-field
         placeholder="Username"
         name="username"
-        color="orange"
+        color="#38a8c0"
         v-model="username"
         :error-messages="errors.username"
       />
      <v-text-field
         placeholder="Email"
         name="email"
-        color="orange"
+        color="#38a8c0"
         v-model="email"
         :error-messages="errors.email"
       />
@@ -27,7 +27,7 @@
           <v-text-field
               placeholder="Password"
               name="password"
-              color="orange"
+              color="#38a8c0"
               v-model="password"
               :append-icon="passwordVisible ? 'visibility_off' : 'visibility'"
               @click:append="passwordVisible = !passwordVisible"
@@ -36,7 +36,7 @@
           />
           <v-tooltip
               top
-              color="orange"
+              color="#38a8c0"
               max-width="350"
               content-class="form-tooltip"
           >
@@ -59,14 +59,14 @@
       <v-text-field
         placeholder="Confirm password"
         name="confirm"
-        color="orange"
+        color="#38a8c0"
         v-model="confirm"
         :type="passwordVisible ? 'text' : 'password'"
         :error-messages="errors.confirm"
       />
       <slot />
       <v-btn
-        color="orange"
+        color="#2b3181"
         :disabled="invalidInput"
         class="mx-0 white--text"
         id="sign-up-btn"
@@ -148,10 +148,13 @@ export default {
 }
 .cookies {
   text-align: center;
-  color: #777;
+  color: #2b3181;
   margin-top: 1em;
   font-size: 0.875em;
 }
+.v-icon {
+          color: #38a8c0!important;
+        }
 </style>
 
 <style lang="scss">

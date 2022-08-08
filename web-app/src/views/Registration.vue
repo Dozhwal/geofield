@@ -17,14 +17,14 @@
     <v-container class="py-1">
       <v-card>
         <v-responsive class="mt-2">
-          <img src="../assets/logo_color.svg" @click="$router.push('/login')">
+          <img src="../assets/geofield_2.svg" @click="$router.push('/login')">
         </v-responsive>
         <v-card-title class="primary--text font-weight-bold pb-0 ml-3">
           <h3> Create your account</h3>
           <v-spacer/>
             <v-btn
             text
-            color="primary"
+            color="#38a8c0"
             class="reset"
             :to="{name: 'login'}"
             >Sign in
@@ -89,12 +89,14 @@ export default {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    background-color: #e6e6e6;
   }
   .container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex: 0 0 auto;
+    background-color: #e6e6e6;
   }
 
   ::v-deep .v-card {
